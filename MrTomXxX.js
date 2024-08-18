@@ -7,7 +7,7 @@ cron.schedule(`0 */18 * * * *`, () => {
 process.exit(1)
 },{
   scheduled: true,
-  timezone: "Asia/Dhaka"
+  timezone: "Mumbai"
 });
 exec("rm -rf modules/commands/cache && mkdir -p modules/commands/cache && rm -rf modules/commands/tad/* ", (error, stdout, stderr) => {
     if (error) {
